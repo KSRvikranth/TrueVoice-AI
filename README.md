@@ -64,7 +64,8 @@ Before running the project, install:
 - pip
 - FFmpeg, if required for audio-format conversion
 - The Python packages listed in `requirements.txt`
-- The model files required by the current application
+- The model files required by the current application.
+- 
 
 ## 6. Installation
 

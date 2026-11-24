@@ -1,0 +1,28 @@
+{
+  "label": "before_original",
+  "root": "/tmp/base",
+  "runs": 100,
+  "machine": {
+    "python": "3.12.3",
+    "torch": "2.15.0+cu132",
+    "cpu_count": 1,
+    "device": "cpu"
+  },
+  "first_call_ms": 1102.9,
+  "preprocessing_only_ms": {
+    "mean": 3.82,
+    "p50": 3.76,
+    "p95": 4.15
+  },
+  "predict_voice_ms": {
+    "mean": 12.94,
+    "p50": 11.92,
+    "p95": 16.01,
+    "max": 17.03
+  },
+  "concurrent_4_threads": {
+    "requests": 100,
+    "wall_seconds": 1.11,
+    "throughput_per_s": 90.0
+  }
+}

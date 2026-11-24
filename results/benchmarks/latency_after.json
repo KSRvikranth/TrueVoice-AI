@@ -1,0 +1,28 @@
+{
+  "label": "after_phase2",
+  "root": "/home/claude/voice-cloning-detection-main",
+  "runs": 100,
+  "machine": {
+    "python": "3.12.3",
+    "torch": "2.15.0+cu132",
+    "cpu_count": 1,
+    "device": "cpu"
+  },
+  "first_call_ms": 1112.4,
+  "preprocessing_only_ms": {
+    "mean": 3.85,
+    "p50": 3.86,
+    "p95": 4.28
+  },
+  "predict_voice_ms": {
+    "mean": 9.38,
+    "p50": 8.61,
+    "p95": 12.36,
+    "max": 13.66
+  },
+  "concurrent_4_threads": {
+    "requests": 100,
+    "wall_seconds": 1.27,
+    "throughput_per_s": 78.4
+  }
+}

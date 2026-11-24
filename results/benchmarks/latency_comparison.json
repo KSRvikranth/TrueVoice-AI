@@ -1,0 +1,175 @@
+{
+ "method": "3 repeated runs of 100 calls each per version, same machine (1 vCPU sandbox), median of run-means shown in report",
+ "before_runs": [
+  {
+   "label": "b1",
+   "root": "/tmp/base",
+   "runs": 100,
+   "machine": {
+    "python": "3.12.3",
+    "torch": "2.15.0+cu132",
+    "cpu_count": 1,
+    "device": "cpu"
+   },
+   "first_call_ms": 1251.5,
+   "preprocessing_only_ms": {
+    "mean": 5.18,
+    "p50": 5.13,
+    "p95": 5.68
+   },
+   "predict_voice_ms": {
+    "mean": 15.39,
+    "p50": 16.41,
+    "p95": 18.4,
+    "max": 25.72
+   },
+   "concurrent_4_threads": {
+    "requests": 100,
+    "wall_seconds": 1.3,
+    "throughput_per_s": 77.0
+   }
+  },
+  {
+   "label": "b2",
+   "root": "/tmp/base",
+   "runs": 100,
+   "machine": {
+    "python": "3.12.3",
+    "torch": "2.15.0+cu132",
+    "cpu_count": 1,
+    "device": "cpu"
+   },
+   "first_call_ms": 1202.3,
+   "preprocessing_only_ms": {
+    "mean": 5.15,
+    "p50": 5.35,
+    "p95": 5.97
+   },
+   "predict_voice_ms": {
+    "mean": 12.45,
+    "p50": 12.1,
+    "p95": 14.53,
+    "max": 19.84
+   },
+   "concurrent_4_threads": {
+    "requests": 100,
+    "wall_seconds": 1.58,
+    "throughput_per_s": 63.3
+   }
+  },
+  {
+   "label": "b3",
+   "root": "/tmp/base",
+   "runs": 100,
+   "machine": {
+    "python": "3.12.3",
+    "torch": "2.15.0+cu132",
+    "cpu_count": 1,
+    "device": "cpu"
+   },
+   "first_call_ms": 1186.8,
+   "preprocessing_only_ms": {
+    "mean": 4.16,
+    "p50": 3.86,
+    "p95": 4.42
+   },
+   "predict_voice_ms": {
+    "mean": 11.86,
+    "p50": 11.6,
+    "p95": 14.6,
+    "max": 16.41
+   },
+   "concurrent_4_threads": {
+    "requests": 100,
+    "wall_seconds": 1.5,
+    "throughput_per_s": 66.9
+   }
+  }
+ ],
+ "after_runs": [
+  {
+   "label": "a1",
+   "root": "/home/claude/voice-cloning-detection-main",
+   "runs": 100,
+   "machine": {
+    "python": "3.12.3",
+    "torch": "2.15.0+cu132",
+    "cpu_count": 1,
+    "device": "cpu"
+   },
+   "first_call_ms": 1192.7,
+   "preprocessing_only_ms": {
+    "mean": 4.4,
+    "p50": 4.16,
+    "p95": 5.76
+   },
+   "predict_voice_ms": {
+    "mean": 9.96,
+    "p50": 9.65,
+    "p95": 11.65,
+    "max": 17.92
+   },
+   "concurrent_4_threads": {
+    "requests": 100,
+    "wall_seconds": 0.97,
+    "throughput_per_s": 103.0
+   }
+  },
+  {
+   "label": "a2",
+   "root": "/home/claude/voice-cloning-detection-main",
+   "runs": 100,
+   "machine": {
+    "python": "3.12.3",
+    "torch": "2.15.0+cu132",
+    "cpu_count": 1,
+    "device": "cpu"
+   },
+   "first_call_ms": 1010.1,
+   "preprocessing_only_ms": {
+    "mean": 5.33,
+    "p50": 5.43,
+    "p95": 6.03
+   },
+   "predict_voice_ms": {
+    "mean": 11.89,
+    "p50": 12.76,
+    "p95": 13.91,
+    "max": 14.38
+   },
+   "concurrent_4_threads": {
+    "requests": 100,
+    "wall_seconds": 0.92,
+    "throughput_per_s": 109.2
+   }
+  },
+  {
+   "label": "a3",
+   "root": "/home/claude/voice-cloning-detection-main",
+   "runs": 100,
+   "machine": {
+    "python": "3.12.3",
+    "torch": "2.15.0+cu132",
+    "cpu_count": 1,
+    "device": "cpu"
+   },
+   "first_call_ms": 1139.5,
+   "preprocessing_only_ms": {
+    "mean": 5.4,
+    "p50": 5.34,
+    "p95": 5.81
+   },
+   "predict_voice_ms": {
+    "mean": 12.2,
+    "p50": 12.2,
+    "p95": 13.96,
+    "max": 15.14
+   },
+   "concurrent_4_threads": {
+    "requests": 100,
+    "wall_seconds": 1.03,
+    "throughput_per_s": 96.8
+   }
+  }
+ ]
+}
